@@ -4,10 +4,71 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: #242020;
+  color: white; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  background-color: #292828;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000; /* Use a higher z-index value */
+}
+
+.nav input {
+  margin-left: 10px; /* Add some left margin to the input */
+  padding: 8px; /* Add padding for better input appearance */
+  height: 5px;
+}
+
+button{
+  color: white;
+  background-color: #292828;
+  height: 18px;
+  border-color: white;
+  border-width: 1px; 
+  cursor: pointer;
+  font-size: 10px;
+}
+
+input{
+  width: 400px;
+  background-color: #373737;
+  border: none;
+  color: white;
+}
+.items{
+  display: flex;
+  justify-content: space-between; 
+  font-size: 10px;
+  gap: 20px; 
+  padding-top: 100px; 
+  position: sticky;
+  padding-left: 20px;
+}
+.item-details{
+  position: fixed;
+  bottom: 0;  
+  padding-bottom: 20px; 
+}
+.bt{
+  background-color: rgb(25, 27, 26);
+  width: 100px;
+  
+}
+a{
+  text-decoration: none;
+  color: white; 
+  
 }
